@@ -1,0 +1,46 @@
+@import '../../../assets/styles/lib/variables';
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: $colorWhite;
+  padding: 1rem;
+  margin: 1rem 1rem;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0.25rem;
+}
+
+.cart-item__img {
+  width: 22rem;
+}
+
+.cart-item__description {
+  padding: 1rem;
+  & h3 {
+    font-size: 1.5rem;
+    color: $colorHeading;
+  }
+
+  & label {
+    color: $colorText;
+  }
+}
+
+.cart_item__description--quantity {
+  display: flex;
+}
+
+.cart-item_actions {
+  width: 22rem;
+  & svg {
+    width: 1.5rem;
+  }
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: $colorPrice;
+}

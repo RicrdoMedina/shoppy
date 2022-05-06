@@ -1,0 +1,36 @@
+@import '../../assets/styles/lib/variables';
+
+.notification-bar {
+  background-color: $colorDefaultNotificationBar;
+  color: $colorWhite;
+}
+
+.error {
+  background-color: $colorErrorNotificationBar;
+  color: $colorWhite;
+}
+
+.success {
+  background-color: $colorSuccessNotificationBar;
+  color: $colorWhite;
+}
+
+.warning {
+  background-color: $colorWarningNotificationBar;
+  color: $colorWhite;
+}
+
+.info {
+  background-color: $colorInfoNotificationBar;
+  color: $colorWhite;
+}
+
+.notification-bar__close {
+  svg {
+    width: 1.2rem;
+    fill: $colorWhite;
+    position: absolute;
+    right: 2rem;
+    top: 0.7rem;
+  }
+}

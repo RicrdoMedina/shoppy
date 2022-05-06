@@ -1,0 +1,15 @@
+@import '../../assets/styles/lib/variables';
+
+.side-bar {
+  margin-top: 9rem;
+}
+
+.side-bar__content--item {
+  color: $colorSideBar;
+}
+
+@media (min-width: 1000px) {
+  .side-bar {
+    margin-top: 5rem;
+  }
+}

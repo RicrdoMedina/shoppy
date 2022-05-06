@@ -1,0 +1,32 @@
+.c-dropdown {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:hover .c-dropdown__content {
+    opacity: 1;
+  }
+}
+
+.c-dropdown__content {
+  position: absolute;
+  width: 100%;
+  bottom: -88px;
+  opacity: 0;
+  transition: ease-in-out all 0.5s;
+  background: #fff;
+  border-radius: 0.52rem;
+  overflow: hidden;
+}
+
+.c-dropdown__content--item {
+  padding: 0.5rem 1rem;
+  transition: ease-in-out all 0.5s;
+  color: #827e7e;
+  cursor: pointer;
+
+  &:hover {
+    background: #f3f3f3;
+  }
+}

@@ -1,0 +1,125 @@
+@import '../../../assets/styles/lib/variables';
+@import '../../../assets/styles/base/keyframes';
+
+.card {
+  background: $colorWhite;
+  background: #fff;
+  height: 380px;
+  width: 300px;
+  box-sizing: border-box;
+  margin: 1rem 0.6rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px $colorWhite;
+  box-shadow: 0px 2px 4px -1px #0000001a, 0px 4px 5px 0px #00000003,
+    0px 1px 10px 0px #00000012;
+}
+
+.card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+}
+
+.card__media img {
+  height: 100%;
+}
+
+.card_content {
+  padding: 1rem 0.3rem;
+  width: 100%;
+  height: 27%;
+}
+
+.card__content--title {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: $colorHeading;
+}
+
+.card__content--price {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: $colorPrice;
+}
+
+.card .card__actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  & div:nth-child(1) {
+    background: transparent;
+    box-shadow: none;
+    color: #005279;
+  }
+
+  & div:nth-child(1):hover button:after {
+    background: #2196f330;
+    width: 94px;
+    height: 61px;
+  }
+}
+
+.card__actions--button {
+  background: transparent;
+  border: none;
+  color: blue;
+  text-transform: uppercase;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+}
+
+.card__actions--button:focus,
+.card__actions--button:hover {
+  outline: 0;
+}
+
+.skeleton {
+  & .card__media::before {
+    content: '';
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    animation: backgroundGradient 3s ease infinite;
+    background: linear-gradient(-45deg, #bbb5b7, #d2cfd0, #d0d0d0, #a2a2a2);
+    background-size: 400% 400%;
+  }
+
+  & .card__content--title,
+  & .card__content--price,
+  & .card__actions--button {
+    animation: backgroundGradient 3s ease infinite;
+    background: linear-gradient(-45deg, #bbb5b7, #d2cfd0, #d0d0d0, #a2a2a2);
+    background-size: 400% 400%;
+    height: 2rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  & .card__content--price,
+  & .card__actions--button {
+    margin-top: 0.5rem;
+    display: block;
+  }
+
+  & .card__actions--button {
+    width: 50%;
+  }
+
+  & .card__media img {
+    display: none;
+  }
+}

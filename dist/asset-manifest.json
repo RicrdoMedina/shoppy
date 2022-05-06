@@ -1,0 +1,16 @@
+{
+  "bundle.css": "/styles.823c1b822f64f29d707c.css",
+  "bundle.js": "/bundle.js",
+  "bundle.js.map": "/bundle.js.map",
+  "vendors.js": "/vendors.js",
+  "vendors.js.map": "/vendors.js.map",
+  "assets/Logo.png": "/assets/Logo.4c2820eb.png",
+  "assets/Logo.svg": "/assets/Logo.5f055c32.svg",
+  "assets/global.scss": "/assets/Montserrat-Regular.f604e095.woff2",
+  "assets/CardContainer.scss": "/assets/bg-card.7fad8fd2.png",
+  "assets/SignInForm.scss": "/assets/bg-sign-in.c92b2d76.jpg",
+  "assets/facebook.svg": "/assets/facebook.b99f56c9.svg",
+  "assets/google.svg": "/assets/google.8d6f19ac.svg",
+  "assets/twitter.svg": "/assets/twitter.ac29ef99.svg",
+  "styles.823c1b822f64f29d707c.css.map": "/styles.823c1b822f64f29d707c.css.map"
+}

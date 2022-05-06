@@ -1,0 +1,18 @@
+/***
+ TAILWIND
+**/
+@import './tailwind.css';
+
+/***
+ RESET HTML5 
+**/
+
+@import './reset/_reset.scss';
+
+/***
+ BASE
+***/
+@import './lib//variables';
+@import './base/_keyframes.scss';
+@import './base/_body.scss';
+@import './base/link';

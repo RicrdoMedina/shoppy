@@ -1,0 +1,210 @@
+@import '../../assets/styles/lib/variables';
+@import '../../assets/styles/base/keyframes';
+
+.overlay-glass-effect {
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f2f23b;
+}
+
+.active {
+}
+
+.modal-custom-background {
+}
+
+.modal-custom-background__modal--content {
+}
+
+.modal-custom-background__modal {
+}
+
+.modal-custom-background__modal--close {
+}
+
+.modal-custom-background__modal--svg {
+}
+
+.out {
+}
+
+.modal-custom {
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &.active {
+    transform: scale(1);
+  }
+
+  &.active .modal-custom-background {
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    z-index: 1001;
+  }
+
+  &.active .modal-custom-background__modal--content,
+  &.active .modal-custom-background__modal--close {
+    opacity: 0;
+    animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1)
+      forwards;
+  }
+
+  &.active .modal-custom-background__modal--svg rect {
+    animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  &.active.out {
+    animation: quickScaleDown 0s 1s linear forwards;
+  }
+
+  &.active.out .modal-custom-background {
+    animation: fadeOut 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  &.active.out .modal-custom-background .modal-custom-background__modal {
+    animation: modalFadeOut 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  &.active.out
+    .modal-custom-background
+    .modal-custom-background__modal--content,
+  &.active.out .modal-custom-background .modal-custom-background__modal--close {
+    animation: modalContentFadeOut 1s cubic-bezier(0.165, 0.84, 0.44, 1)
+      forwards;
+  }
+
+  &.active.out
+    .modal-custom-background
+    .modal-custom-background__modal
+    .modal-custom-background__modal--svg
+    rect {
+    animation: sketchOut 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  & button:hover,
+  & button:focus {
+    outline: 0;
+  }
+}
+
+.modal-custom-background__modal--close {
+  & span {
+    right: 1rem;
+    top: 1rem;
+    background: #e6e4e4;
+    border-radius: 100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    will-change: auto;
+  }
+
+  & span:hover {
+    background: #d6d6d6;
+  }
+}
+
+.modal-custom-header {
+  color: #000;
+  height: 5vh;
+  width: 100%;
+}
+
+.content-footer {
+  & span,
+  & a {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.btn-recover-passowrd {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-custom-background__modal {
+  background-color: transparent;
+  animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  min-height: fit-content;
+  max-height: 95vh;
+}
+
+.modal-custom-background__modal--header {
+  height: 4rem;
+
+  & h3 {
+    color: $colorHeading;
+    transform: translateY(10px);
+  }
+}
+
+.modal-custom-background__modal--content {
+  height: 19rem;
+  display: flex;
+}
+
+.modal-custom-background__modal--footer {
+  height: 3rem;
+}
+
+.simple-button--cancel {
+  background: #fff;
+  border: solid 1px $colorLink;
+  color: $colorLink;
+  width: 9rem;
+  height: 2.5rem;
+}
+
+.simple-button--success {
+  background: $colorLink;
+  border: solid 1px $colorLink;
+  color: #fff;
+  width: 9rem;
+  height: 2.5rem;
+}
+
+.simple-button--btn {
+  padding: 0.8rem 0;
+}
+
+.modal-custom-background__modal--footer div.simple-button--cancel button:after {
+  background: #b7639159;
+}
+
+.modal-custom-background__modal--svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+
+  & rect {
+    stroke: $colorLink;
+    stroke-width: 4px;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+  }
+}
+
+@media (min-width: 1000px) {
+  .modal-custom-background__modal {
+    min-height: 60vh;
+    max-height: 95vh;
+  }
+
+  .modal-custom-background__modal--content {
+    height: 27rem;
+  }
+
+  .simple-button--cancel {
+    width: 13rem;
+    height: 3rem;
+  }
+
+  .simple-button--success {
+    width: 13rem;
+    height: 3rem;
+  }
+}

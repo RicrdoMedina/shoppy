@@ -1,0 +1,32 @@
+@import '../../../assets/styles/lib/variables';
+
+.simple-select .MuiFormControl-root.makeStyles-formControl-1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.simple-select
+  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
+  border: 0;
+  outline: 0;
+}
+
+.simple-select .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu {
+  border-radius: 999px;
+  box-shadow: 4px 4px 5px #bfbfbf;
+  border: solid 1px #e0e0e0;
+  outline: 0;
+  padding: 14px 15px;
+}
+
+.simple-select .MuiInputLabel-formControl {
+  left: 6px;
+  color: #004a8f;
+}
+
+.simple-select .MuiOutlinedInput-notchedOutline {
+  border: none;
+  outline: 0;
+}

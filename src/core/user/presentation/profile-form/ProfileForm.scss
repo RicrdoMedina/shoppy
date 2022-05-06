@@ -1,0 +1,14 @@
+@import '../../../assets/styles/lib/variables';
+
+.profile__content {
+  width: 100%;
+  height: 100%;
+
+  & form {
+    width: 400px;
+  }
+}
+
+.card-container {
+  display: flex;
+}

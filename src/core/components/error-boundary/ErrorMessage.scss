@@ -1,0 +1,36 @@
+@import '../../assets/styles/lib/variables';
+
+.error-message {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgb(204, 43, 94), rgb(117, 58, 136));
+  color: #fff;
+
+  & button {
+    border: solid 1px #fff;
+    border-radius: 1.5rem;
+    outline: 0;
+  }
+}
+
+.error-message__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-message__content--svg {
+  background: #ff00005c;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+
+  & svg {
+    width: 14rem;
+    height: 14rem;
+  }
+}

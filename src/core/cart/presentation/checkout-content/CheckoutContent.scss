@@ -1,0 +1,30 @@
+@import '../../../assets/styles/lib/variables';
+
+.checkout__content {
+  height: 100%;
+  width: 100%;
+
+  & h3 {
+    color: $colorHeading;
+  }
+
+  & p {
+    color: $colorText;
+  }
+
+  & svg {
+    width: 100px;
+  }
+
+  & a {
+    border: solid 1px $colorLink;
+    border-radius: 0.52rem;
+    background: $colorLink;
+    color: $colorWhite;
+  }
+}
+
+.card-container {
+  display: flex;
+  height: auto;
+}

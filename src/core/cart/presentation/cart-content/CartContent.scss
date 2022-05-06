@@ -1,0 +1,47 @@
+@import '../../../assets/styles/lib/variables';
+
+.cart-content {
+  width: 100%;
+}
+
+.card-container {
+  padding: 3rem 0 0;
+}
+
+.cart__content {
+  min-height: inherit;
+}
+
+.price-total,
+.price {
+  color: $colorPrice;
+}
+
+.cart__empty {
+  width: 20rem;
+  height: 20rem;
+  & svg {
+    fill: $colorDisabled;
+    width: 11rem;
+    height: 10rem;
+  }
+
+  & p {
+    color: $colorDisabled;
+  }
+}
+
+.button-back {
+  border: solid 1px $colorLink;
+  border-radius: 0.52rem;
+  outline: 0;
+}
+
+.button-sell,
+.cart__empty a {
+  border: solid 1px $colorLink;
+  border-radius: 0.52rem;
+  background: $colorLink;
+  color: #fff;
+  outline: 0;
+}

@@ -1,0 +1,84 @@
+@import '../../../assets/styles/lib/variables';
+
+.content-input-default {
+}
+
+.content-input-default--label {
+  position: absolute;
+  top: 25px;
+  left: 18px;
+  font-size: 1.2rem;
+  color: $colorLabelInput;
+  transition: ease-in-out all 0.5s;
+}
+
+.content-input-default input:focus + label,
+.content-input-default input:not([value='']):invalid + label,
+.content-input-default input:not([value='']) + label {
+  top: 7px;
+  font-size: 0.9rem;
+  background: $colorWhite;
+}
+
+.content-input-default--input {
+  background: $colorWhite;
+  border: solid 1px $colorBorderInput;
+  position: relative;
+
+  &:focus + label,
+  &:not([value='']):invalid + label,
+  &:not([value='']) + label {
+    top: 7px;
+    font-size: 0.9rem;
+    background: $colorWhite;
+  }
+}
+
+.shadow {
+  box-shadow: 4px 4px 5px #bfbfbf;
+}
+
+.content-input-default--text-error {
+  background: $colorRedValidation;
+  color: $colorWhite;
+  position: relative;
+  top: -12px;
+  border-radius: 0 0 3rem 3rem;
+  z-index: 1;
+  padding: 0.8rem 2rem 0.2rem;
+  margin: 0;
+  font-size: 0.78rem;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 1px;
+    bottom: 16px;
+    width: 2rem;
+    height: 2rem;
+    background: $colorRedValidation;
+    transform: rotate(-7deg);
+    border-radius: 0.5rem 0 1rem 1rem;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 16px;
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(1deg);
+    border-radius: 0 0.5rem 1rem 1rem;
+    background: $colorRedValidation;
+  }
+}
+
+.content-input-default--show-password {
+  position: absolute;
+  top: 34px;
+  right: 14px;
+}

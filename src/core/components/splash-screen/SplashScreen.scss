@@ -1,0 +1,35 @@
+.splash-screen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(204, 43, 94);
+  background: radial-gradient(
+    circle,
+    rgb(204, 43, 94) 0%,
+    rgb(117, 58, 136) 100%
+  );
+}
+
+.logo {
+  width: 38rem;
+  animation: beat 4s infinite;
+  transform: scale(1);
+}
+
+@keyframes beat {
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

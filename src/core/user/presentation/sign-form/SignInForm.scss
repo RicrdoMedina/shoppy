@@ -1,0 +1,93 @@
+@import '../../../assets/styles/lib/variables';
+
+.sign-in-box {
+  background: $colorLink url('../../../assets/images/bg-sign-in.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+  min-height: inherit;
+}
+
+.form-sign-in {
+  width: 500px;
+  background: $colorWhite;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px #424141ba;
+  color: $colorText;
+
+  & .simple-button {
+    background: $colorLink;
+    background: -webkit-linear-gradient(
+      right,
+      #00dbde,
+      #fc00ff,
+      #00dbde,
+      #fc00ff
+    );
+    background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  }
+}
+
+.form-sign-in--icon-google {
+  background: $colorDefaultCircularButton;
+
+  &::after {
+    box-shadow: inset 0 0 0 1px $colorDefaultCircularButton;
+  }
+
+  &:hover::before {
+    box-shadow: inset 0 30px 0 0 $colorGoole, inset 0 -30px 0 0 $colorGoole;
+  }
+
+  &:hover::after {
+    box-shadow: inset 0 0 0 1px $colorGoole;
+  }
+}
+
+.form-sign-in--icon-twitter {
+  background: $colorDefaultCircularButton;
+  &::after {
+    box-shadow: inset 0 0 0 1px $colorDefaultCircularButton;
+  }
+
+  &::before {
+    box-shadow: inset 0 0 0 60px $colorDefaultCircularButton;
+  }
+
+  &:hover::before {
+    box-shadow: inset 0 30px 0 0 $colorTwitter, inset 0 -30px 0 0 $colorTwitter;
+  }
+
+  &:hover::after {
+    box-shadow: inset 0 0 0 1px $colorTwitter;
+  }
+}
+
+.form-sign-in--icon-facebook {
+  background: $colorDefaultCircularButton;
+  -webkit-transition-duration: 1s;
+  transition-duration: 0.5s;
+  &::before {
+    -webkit-transition-duration: 1s;
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px $colorDefaultCircularButton;
+  }
+
+  &:hover::before {
+    -webkit-transition-duration: 1s;
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 60px $colorFacebook;
+  }
+}
+
+.form-sign-in--link {
+  transition: ease-in-out all 0.5s;
+  &:hover {
+    color: $colorLink;
+  }
+}

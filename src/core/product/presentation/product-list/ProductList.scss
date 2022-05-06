@@ -1,0 +1,14 @@
+@import '../../../assets/styles/lib/variables';
+@import '../../../assets/styles/lib/mixins';
+
+.product-list {
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.product-list__products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
